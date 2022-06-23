@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mario-rossi, .elis-miao, .gattino-micino {
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 10px;
+    height: 400px;
+    background: rgb(211, 207, 207);
+}
+
+.top-card1 {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    max-height: 3em;
+    display: grid;
+    grid-template-columns: 110px auto auto auto auto;
+    grid-template-rows: 10px auto auto;
+    padding: 0;
+}
+
+.top-card1 > svg {
+    grid-column: 1;
+}
+
+.top-card1 > h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 0;
+    grid-column: 2;
+    margin-left: -60px;
+    grid-row: 1;
+}
+
+.top-card1 > #data {
+    font-size: 13px;
+    padding: 0;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: -60px;
+}
+
+.top-card1 > #punti {
+    grid-column: 5;
+    grid-row: 1;
+    margin-top: 10px;
+}
+
+
+.card-bottom1 > p {
+    margin-left: 10px;
+}
+
+.icons {
+    margin-left: 10px;
+    top: 5px;
+    position: relative;
+}
+
+img {
+    height: 240px;
+    width: 298px;    
+}
+
+i + i {
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-flow: wrap;
+        gap: 20px;        
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        flex-flow: wrap;
+        gap: 20px;        
+    }
+}
